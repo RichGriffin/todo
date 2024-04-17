@@ -1,0 +1,10 @@
+namespace: todo
+resources:
+- postgres-create-table.yaml
+- postgres-deployment.yaml
+- postgres-secret.yaml
+- postgres-service.yaml
+- todo-deployment.yaml
+- todo-ingress.yaml
+- todo-insert-data.yaml
+- todo-service.yaml

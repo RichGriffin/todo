@@ -1,0 +1,26 @@
+---
+apiVersion: chainsaw.kyverno.io/v1alpha1
+kind: Test
+metadata:
+  name: chainsaw-test
+spec:
+  description: This is a simple test using chainsaw
+  skip: false
+  concurrent: false
+  skipDelete: false
+  timeouts:
+    apply: 10s
+    assert: 10s
+    error: 10s
+  steps:
+  - description: applies the service to the cluster
+    try:
+    - description: create the service
+      apply:
+        file: ../todo-service.yaml
+    - description: check the service content
+      assert:
+        file: ../todo-service.yaml
+    - description: check the service for errors
+      error:
+        file: ../todo-service.yaml
