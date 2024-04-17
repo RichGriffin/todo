@@ -12,7 +12,7 @@ spec:
   source:
     path: app
     repoURL: https://github.com/RichGriffin/todo
-    targetRevision: minikube
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
