@@ -10,8 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/todo
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    path: todo
+    repoURL: https://github.com/RichGriffin/todo
     targetRevision: minikube
   syncPolicy:
     automated:
