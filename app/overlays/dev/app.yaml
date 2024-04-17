@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: todo
+    path: app
     repoURL: https://github.com/RichGriffin/todo
     targetRevision: minikube
   syncPolicy:
