@@ -8,7 +8,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"
 spec:
   rules:
-    - host: todo.devnation
+    - host: dev.todo.app
       http:
         paths:
           - path: /
