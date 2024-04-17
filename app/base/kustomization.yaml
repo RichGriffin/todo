@@ -4,3 +4,5 @@ resources:
 - postgres-deployment.yaml
 - postgres-secret.yaml
 - postgres-service.yaml
+- todo-deployment.yaml
+- todo-service.yaml
