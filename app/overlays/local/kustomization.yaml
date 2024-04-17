@@ -5,14 +5,4 @@ namespace: todo-app-local
 resources:
 - ../../base
 - namespace.yaml
-patches:
-- patch: |-
-    - op: replace
-      path: /spec/rules/0/host
-      value: crapola
-  target:
-    group: networking.k8s.io
-    kind: Ingress
-    name: todo
-    namespace: todo-app-local
-    version: v1
+- ingress.yaml
