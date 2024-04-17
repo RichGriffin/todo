@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: app
+    path: app/dev
     repoURL: https://github.com/RichGriffin/todo
     targetRevision: main
   syncPolicy:
