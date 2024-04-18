@@ -6,4 +6,3 @@ resources:
 - postgres-service.yaml
 - todo-deployment.yaml
 - todo-service.yaml
-- todo-ingress.yaml

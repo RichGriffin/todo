@@ -8,13 +8,12 @@ metadata:
     argocd.argoproj.io/sync-wave: "3"
 spec:
   rules:
-    - host: dev.todo.app
+    - host: local.todo.app
       http:
         paths:
-          - path: /
-            pathType: Prefix
-            backend:
+          - backend:
               service:
                 name: todo-gitops
                 port:
                   number: 8080
+            pathType: ImplementationSpecific
