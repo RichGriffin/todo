@@ -2,6 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: name: chainsaw-test
-(status.port == spec.replicas): true
+(status.replicas == spec.replicas): true
 spec:
-  (port == `8080`): true
+  (replicas > `1`): true

@@ -17,10 +17,10 @@ spec:
     try:
     - description: create the service
       apply:
-        file: ../todo-service.yaml
+        file: ../base/todo-service.yaml
     - description: check the service content
       assert:
-        file: ../todo-service.yaml
+        file: ../base/todo-service.yaml
     - description: check the service for errors
       error:
-        file: ../todo-service.yaml
+        file: ../base/todo-service.yaml

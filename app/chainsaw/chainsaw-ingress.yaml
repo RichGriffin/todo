@@ -7,7 +7,7 @@ spec:
   - try:
     - apply:
         # resource
-        file: ../todo-ingress.yaml
+        file: ../base/todo-deployment.yaml
     - assert:
         # assertions
         file: assert.yaml
